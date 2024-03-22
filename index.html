@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sultan Kafe</title>
+		<meta name="description" content="#" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="CodeHim" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Nunito+Sans:ital,opsz,wght@1,6..12,500&family=Salsa&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicon_io/site.webmanifest" />
+	</head>
+	<body>
+		<header class="header" id="header">
+			<div class="wrapper">
+				<div class="container header-container">
+					<div class="header-greeting">
+						<div class="header-img">
+							<img
+								class="logo"
+								src="img/sultanlogo-1462-PhotoRoom.png-PhotoRoom.png"
+								alt="img"
+							/>
+						</div>
+						<div class="header-text">
+							<h2 class="header-title">
+								Kafemizga <br />
+								xush kelibsiz!
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="basket">
+			<button onclick="openCart()" class="cart-button" id="cartButton">
+				<div class="header-icon">
+					<img class="shopping-cart" src="img/icon/shopping-cart.png" alt="" />
+				</div>
+				<span id="cartItemCount" class="badge">0</span>
+			</button>
+		</div>
+
+		<div class="slider middle">
+			<div class="slides">
+				<input type="radio" name="r" id="r1" checked />
+				<input type="radio" name="r" id="r2" />
+				<input type="radio" name="r" id="r3" />
+				<input type="radio" name="r" id="r4" />
+
+				<div class="slide sr">
+					<a href="" class="">
+						<img class="slide-img" src="img/slayder1.png" alt="" />
+					</a>
+				</div>
+
+				<div class="slide">
+					<a
+						href="https://www.instagram.com/sardor___2586?igsh=MWt2bjRpMmVxZGI1cQ=="
+						class=""
+					>
+						<img class="slide-img" src="img/slayder2.jpg" alt="" />
+					</a>
+				</div>
+
+				<div class="slide">
+					<a href="#" id="openModal-1">
+						<img class="slide-img" src="img/slayder3.png" alt="" />
+					</a>
+				</div>
+
+				<div class="slide">
+					<img class="slide-img" src="img/slayder4.jpg" alt="" />
+				</div>
+			</div>
+
+			<div class="navigation">
+				<label for="r1" class="bar"></label>
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+				<label for="r4" class="bar"></label>
+			</div>
+		</div>
+
+		<div id="myModal-1" class="modal-1">
+			<div class="modal-content-1">
+				<span class="close-1">&times;</span>
+				<div>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="table-left">Ishchi</td>
+								<td class="table-right">ofitsiant</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish vaqti</td>
+								<td class="table-right">09:00 - 19:00</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish haqi</td>
+								<td class="table-right">kelishishadi</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish kuni</td>
+								<td class="table-right">
+									Dushanba <br />
+									Seshanba <br />
+									Chorshanba <br />
+									Payshanba <br />
+									Juma <br />
+									Shanba
+								</td>
+							</tr>
+							<td class="table-left">Tel. nomer</td>
+							<td class="table-right">
+								<a class="number" href="tel:+998997331673">+998(99)7331673</a>
+							</td>
+							<tr>
+								<td class="table-left">Qo'shimcha</td>
+								<td class="table-right">.........</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="table-left">Ishchi</td>
+								<td class="table-right">povar</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish vaqti</td>
+								<td class="table-right">09:00 - 19:00</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish haqi</td>
+								<td class="table-right">kelishishadi</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish kuni</td>
+								<td class="table-right">
+									Dushanba <br />
+									Seshanba <br />
+									Chorshanba <br />
+									Payshanba <br />
+									Juma <br />
+									Shanba
+								</td>
+							</tr>
+							<td class="table-left">Tel. nomer</td>
+							<td class="table-right">
+								<a class="number" href="tel:+998997331673">+998(99)7331673</a>
+							</td>
+							<tr>
+								<td class="table-left">Qo'shimcha</td>
+								<td class="table-right">.........</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="table-left">Ishchi</td>
+								<td class="table-right">tozalovchi</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish vaqti</td>
+								<td class="table-right">09:00 - 19:00</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish haqi</td>
+								<td class="table-right">kelishishadi</td>
+							</tr>
+							<tr>
+								<td class="table-left">Ish kuni</td>
+								<td class="table-right">
+									Dushanba <br />
+									Seshanba <br />
+									Chorshanba <br />
+									Payshanba <br />
+									Juma <br />
+									Shanba
+								</td>
+							</tr>
+							<td class="table-left">Tel. nomer</td>
+							<td class="table-right">
+								<a class="number" href="tel:+998997331673">+998(99)7331673</a>
+							</td>
+							<tr>
+								<td class="table-left">Qo'shimcha</td>
+								<td class="table-right">.........</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="container menu-container">
+				<div class="menu-section">
+					<div class="menu-category menu-category-first">
+						<p class="menu-title">Salatlar</p>
+					</div>
+				</div>
+				<div class="menu-content">
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/svejiy.jpg" />
+						</div>
+						<div class="product" id="product1">
+							<h2 class="food-title-first">Svejiy</h2>
+							<div class="food-price">
+								<p id="price1">16.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(1)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/jezar.jpg" />
+						</div>
+						<div class="product" id="product2">
+							<h2 class="food-title-first">Cezar</h2>
+							<div class="food-price">
+								<p id="price2">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(2)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/mjkpz.jpg" />
+						</div>
+						<div class="product" id="product3">
+							<h2 class="food-title-second">Muzskoy kapriz</h2>
+							<div class="food-price">
+								<p id="price3">45.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(3)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/achik.jpg" />
+						</div>
+						<div class="product" id="product4">
+							<h2 class="food-title-second">Achik-chuchuk</h2>
+							<div class="food-price">
+								<p id="price4">16.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(4)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/soleniy.jpg" />
+						</div>
+						<div class="product" id="product5">
+							<h2 class="food-title-first">Soleniy</h2>
+							<div class="food-price">
+								<p id="price5">16.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(5)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/myasnaya.jpg" />
+						</div>
+						<div class="product" id="product6">
+							<h2 class="food-title-first">Myasnoy</h2>
+							<div class="food-price">
+								<p id="price6">35.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(6)">Saqlash</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-category menu-category-second">
+						<p class="menu-title">Taomlar</p>
+					</div>
+				</div>
+				<div class="menu-content">
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/kabob.jpg" />
+						</div>
+						<div class="product" id="product7">
+							<h2 class="food-title-first">Kabob</h2>
+							<div class="food-price">
+								<p id="price7">150.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(7)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/djiz.jpg" />
+						</div>
+						<div class="product" id="product8">
+							<h2 class="food-title-first">Djiz</h2>
+							<div class="food-price">
+								<p id="price8">130.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(8)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/tifteli.jpg" />
+						</div>
+						<div class="product" id="product9">
+							<h2 class="food-title-second">Tiftel</h2>
+							<div class="food-price">
+								<p id="price9">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(9)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/pelmeni.jpg" />
+						</div>
+						<div class="product" id="product10">
+							<h2 class="food-title-second">Barak</h2>
+							<div class="food-price">
+								<p id="price10">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(10)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/manti.jpg" />
+						</div>
+						<div class="product" id="product11">
+							<h2 class="food-title-first">Manti</h2>
+							<div class="food-price">
+								<p id="price11">30.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(11)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/golubji.jpg" />
+						</div>
+						<div class="product" id="product12">
+							<h2 class="food-title-first">Golupse</h2>
+							<div class="food-price">
+								<p id="price12">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(12)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/sup.jpg" />
+						</div>
+						<div class="product" id="product13">
+							<h2 class="food-title-second">Kaynatma shorva</h2>
+							<div class="food-price">
+								<p id="price13">30.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(13)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/somsaG.jpg" />
+						</div>
+						<div class="product" id="product14">
+							<h2 class="food-title-second">Goshtli somsa</h2>
+							<div class="food-price">
+								<p id="price14">8.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(14)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/somsaK.jpg" />
+						</div>
+						<div class="product" id="product15">
+							<h2 class="food-title-second">Kartoshka somsa</h2>
+							<div class="food-price">
+								<p id="price15">5.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(15)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/guma.jpg" />
+						</div>
+						<div class="product" id="product16">
+							<h2 class="food-title-first">Gumma</h2>
+							<div class="food-price">
+								<p id="price16">8.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(16)">Saqlash</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-section">
+					<div class="menu-category menu-category-third">
+						<p class="menu-title">Mangal</p>
+					</div>
+				</div>
+				<div class="menu-content">
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/shashI.jpg" />
+						</div>
+						<div class="product" id="product17">
+							<h2 class="food-title-first">Ijon shashlik</h2>
+							<div class="food-price">
+								<p id="price17">12.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(17)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/shashM.jpg" />
+						</div>
+						<div class="product" id="product18">
+							<h2 class="food-title-second">Kuskovoy-mol</h2>
+							<div class="food-price">
+								<p id="price18">20.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(18)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/shashK.jpg" />
+						</div>
+						<div class="product" id="product19">
+							<h2 class="food-title-second">Kuskovoy-koy</h2>
+							<div class="food-price">
+								<p id="price19">20.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(19)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/shashT.jpg" />
+						</div>
+						<div class="product" id="product20">
+							<h2 class="food-title-second">Tovuk shashlik</h2>
+							<div class="food-price">
+								<p id="price20">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(20)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/kurijaB.jpg" />
+						</div>
+						<div class="product" id="product21">
+							<h2 class="food-title-first">Gril tovuk</h2>
+							<div class="food-price">
+								<p id="price21">60.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(21)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/krilishki.jpg" />
+						</div>
+						<div class="product" id="product22">
+							<h2 class="food-title-first">Krilishki</h2>
+							<div class="food-price">
+								<p id="price22">20.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(22)">Saqlash</button>
+						</div>
+					</div>
+				</div>
+				<div class="menu-section">
+					<div class="menu-category menu-category-fourth">
+						<p class="menu-title">Fast-food</p>
+					</div>
+				</div>
+				<div class="menu-content">
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/pizzaM.jpg" />
+						</div>
+						<div class="product" id="product23">
+							<h2 class="food-title-first">Pizza katta</h2>
+							<div class="food-price">
+								<p id="price23">60.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(23)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/pizzaP.jpg" />
+						</div>
+						<div class="product" id="product24">
+							<h2 class="food-title-first">Pizza kichik</h2>
+							<div class="food-price">
+								<p id="price24">35.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(24)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/lavashM.jpg" />
+						</div>
+						<div class="product" id="product25">
+							<h2 class="food-title-first">Lavas</h2>
+							<div class="food-price">
+								<p id="price25">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(25)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/sh-lav-S.jpg" />
+						</div>
+						<div class="product" id="product26">
+							<h2 class="food-title-second">Lavas pishloqli</h2>
+							<div class="food-price">
+								<p id="price26">30.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(26)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/lavash.jpg" />
+						</div>
+						<div class="product" id="product27">
+							<h2 class="food-title-first">Shaurma</h2>
+							<div class="food-price">
+								<p id="price27">20.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(27)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/shaurma.jpg" />
+						</div>
+						<div class="product" id="product28">
+							<h2 class="food-title-second">Shaurma pishloqli</h2>
+							<div class="food-price">
+								<p id="price28">25.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(28)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/burger.jpg" />
+						</div>
+						<div class="product" id="product29">
+							<h2 class="food-title-first">Chiz standart</h2>
+							<div class="food-price">
+								<p id="price29">20.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(29)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/chizburger.jpg" />
+						</div>
+						<div class="product" id="product30">
+							<h2 class="food-title-first">Chiz dvaynoy</h2>
+							<div class="food-price">
+								<p id="price30">35.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(30)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/xot-dog.jpg" />
+						</div>
+						<div class="product" id="product31">
+							<h2 class="food-title-first">Xod-dog</h2>
+							<div class="food-price">
+								<p id="price31">10.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(31)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/xod-dogM.jpg" />
+						</div>
+						<div class="product" id="product32">
+							<h2 class="food-title-second">Xod-dog Sultan</h2>
+							<div class="food-price">
+								<p id="price32">20.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(32)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/gamburg.jpg" />
+						</div>
+						<div class="product" id="product33">
+							<h2 class="food-title-second">Gamburg</h2>
+							<div class="food-price">
+								<p id="price33">12.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(33)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/gamburg2.jpg" />
+						</div>
+						<div class="product" id="product34">
+							<h2 class="food-title-second">Gamburg patir</h2>
+							<div class="food-price">
+								<p id="price34">14.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(34)">Saqlash</button>
+						</div>
+					</div>
+				</div>
+				<div class="menu-section">
+					<div class="menu-category menu-category-fifth">
+						<p class="menu-title">Non choy</p>
+					</div>
+				</div>
+				<div class="menu-content">
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/Buxanka.jpg" />
+						</div>
+						<div class="product" id="product35">
+							<h2 class="food-title-first">Buxanka</h2>
+							<div class="food-price">
+								<p id="price35">4.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(35)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/lepeshka.jpg" />
+						</div>
+						<div class="product" id="product36">
+							<h2 class="food-title-first">Chorak</h2>
+							<div class="food-price">
+								<p id="price36">5.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(36)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/xlebCh.jpg" />
+						</div>
+						<div class="product" id="product37">
+							<h2 class="food-title-first">Kora</h2>
+							<div class="food-price">
+								<p id="price37">8.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(37)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/Patir.jpg" />
+						</div>
+						<div class="product" id="product38">
+							<h2 class="food-title-second">Patir</h2>
+							<div class="food-price">
+								<p id="price38">10.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(38)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/patirG.jpg" />
+						</div>
+						<div class="product" id="product39">
+							<h2 class="food-title-first">Goshtli parir</h2>
+							<div class="food-price">
+								<p id="price39">14.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(39)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/xlebA.jpg" />
+						</div>
+						<div class="product" id="product40">
+							<h2 class="food-title-second">Assarti non</h2>
+							<div class="food-price">
+								<p id="price40">70.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(40)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/chayCH.jpg" />
+						</div>
+						<div class="product" id="product41">
+							<h2 class="food-title-first">Qora choy</h2>
+							<div class="food-price">
+								<p id="price41">5.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(41)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/chayZ.jpg" />
+						</div>
+						<div class="product" id="product42">
+							<h2 class="food-title-first">Kok choy</h2>
+							<div class="food-price">
+								<p id="price42">5.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(42)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/chayL.jpg" />
+						</div>
+						<div class="product" id="product43">
+							<h2 class="food-title-second">Limonli choy</h2>
+							<div class="food-price">
+								<p id="price43">10.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(43)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/kofe.jpg" />
+						</div>
+						<div class="product" id="product44">
+							<h2 class="food-title-second">Nescafe Kofe</h2>
+							<div class="food-price">
+								<p id="price44">5.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(44)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/tortR.jpg" />
+						</div>
+						<div class="product" id="product45">
+							<h2 class="food-title-second">Roza tort</h2>
+							<div class="food-price">
+								<p id="price45">12.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(45)">Saqlash</button>
+						</div>
+					</div>
+
+					<div class="menu-list" data-aos="fade-right">
+						<div class="img-content">
+							<img class="food-img" src="img/sub-img/snikers.jpg" />
+						</div>
+						<div class="product" id="product46">
+							<h2 class="food-title-second">Snikers tort</h2>
+							<div class="food-price">
+								<p id="price46">14.000</p>
+							</div>
+						</div>
+						<div class="product-button">
+							<button class="button" onclick="addToCart(46)">Saqlash</button>
+						</div>
+					</div>
+				</div>
+				<div class="menu-section">
+					<div class="menu-category menu-category-six">
+						<p class="menu-title">Ichimliklar</p>
+					</div>
+				</div>
+				<div class="container accordion-container">
+					<div class="accordion-content">
+						<button class="accordion accordion-first">Coca Cola</button>
+						<div class="panel">
+							<div class="vipivka" id="product47">
+								<h2 class="bar-title">Cola 2L</h2>
+								<p class="bar-price" id="price47">18.000</p>
+								<button class="bar-button button" onclick="addToCart(47)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product48">
+								<h2 class="bar-title">Cola 1.5L</h2>
+								<p class="bar-price" id="price48">15.000</p>
+								<button class="bar-button button" onclick="addToCart(48)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product49">
+								<h2 class="bar-title">Cola 1L</h2>
+								<p class="bar-price" id="price49">11.000</p>
+								<button class="bar-button button" onclick="addToCart(49)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product50">
+								<h2 class="bar-title">Cola 0.5L</h2>
+								<p class="bar-price" id="price50">7.000</p>
+								<button class="bar-button button" onclick="addToCart(50)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product51">
+								<h2 class="bar-title">Cola banka</h2>
+								<p class="bar-price" id="price51">5.000</p>
+								<button class="bar-button button" onclick="addToCart(51)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product52">
+								<h2 class="bar-title">Cola shisha</h2>
+								<p class="bar-price" id="price52">4.000</p>
+								<button class="bar-button button" onclick="addToCart(52)">
+									Saqlash
+								</button>
+							</div>
+						</div>
+
+						<button class="accordion accordion-second">Fanta</button>
+						<div class="panel">
+							<div class="vipivka" id="product53">
+								<h2 class="bar-title">Fanta 2L</h2>
+								<p class="bar-price" id="price53">18.000</p>
+								<button class="bar-button button" onclick="addToCart(53)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product54">
+								<h2 class="bar-title">Fanta 1.5L</h2>
+								<p class="bar-price" id="price54">15.000</p>
+								<button class="bar-button button" onclick="addToCart(54)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product55">
+								<h2 class="bar-title">Fanta 1L</h2>
+								<p class="bar-price" id="price55">11.000</p>
+								<button class="bar-button button" onclick="addToCart(55)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product56">
+								<h2 class="bar-title">Fanta 0.5L</h2>
+								<p class="bar-price" id="price56">7.000</p>
+								<button class="bar-button button" onclick="addToCart(56)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product57">
+								<h2 class="bar-title">Fanta banka</h2>
+								<p class="bar-price" id="price57">5.000</p>
+								<button class="bar-button button" onclick="addToCart(57)">
+									Saqlash
+								</button>
+							</div>
+						</div>
+
+						<button class="accordion accordion-third">Sprite</button>
+						<div class="panel">
+							<div class="vipivka" id="product58">
+								<h2 class="bar-title">Sprite 1.5L</h2>
+								<p class="bar-price" id="price58">15.000</p>
+								<button class="bar-button button" onclick="addToCart(58)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product59">
+								<h2 class="bar-title">Sprite 1L</h2>
+								<p class="bar-price" id="price59">11.000</p>
+								<button class="bar-button button" onclick="addToCart(59)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product60">
+								<h2 class="bar-title">Sprite 0.5L</h2>
+								<p class="bar-price" id="price60">7.000</p>
+								<button class="bar-button button" onclick="addToCart(60)">
+									Saqlash
+								</button>
+							</div>
+						</div>
+
+						<button class="accordion accordion-fourch">Sokla</button>
+						<div class="panel">
+							<div class="vipivka" id="product61">
+								<h2 class="bar-title">Dinay 1L</h2>
+								<p class="bar-price" id="price61">10.000</p>
+								<button class="bar-button button" onclick="addToCart(61)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product62">
+								<h2 class="bar-title">Fusetea 1L</h2>
+								<p class="bar-price" id="price62">11.000</p>
+								<button class="bar-button button" onclick="addToCart(62)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product63">
+								<h2 class="bar-title">Fusetea 0.5L</h2>
+								<p class="bar-price" id="price63">7.000</p>
+								<button class="bar-button button" onclick="addToCart(63)">
+									Saqlash
+								</button>
+							</div>
+
+							<div class="vipivka" id="product68">
+								<h2 class="bar-title">Sochnaya d.</h2>
+								<p class="bar-price" id="price68">15.000</p>
+								<button class="bar-button button" onclick="addToCart(68)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product69">
+								<h2 class="bar-title">Viko</h2>
+								<p class="bar-price" id="price69">20.000</p>
+								<button class="bar-button button" onclick="addToCart(69)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product70">
+								<h2 class="bar-title">Palpi</h2>
+								<p class="bar-price" id="price70">25.000</p>
+								<button class="bar-button button" onclick="addToCart(70)">
+									Saqlash
+								</button>
+							</div>
+						</div>
+
+						<button class="accordion accordion-fifth">Flesh/Moxito</button>
+						<div class="panel">
+							<div class="vipivka" id="product64">
+								<h2 class="bar-title">Moxito</h2>
+								<p class="bar-price" id="price64">14.000</p>
+								<button class="bar-button button" onclick="addToCart(64)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product65">
+								<h2 class="bar-title">Flesh</h2>
+								<p class="bar-price" id="price65">10.000</p>
+								<button class="bar-button button" onclick="addToCart(65)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product66">
+								<h2 class="bar-title">Flesh rangli</h2>
+								<p class="bar-price" id="price66">12.000</p>
+								<button class="bar-button button" onclick="addToCart(66)">
+									Saqlash
+								</button>
+							</div>
+						</div>
+
+						<button class="accordion accordion-last">Suv</button>
+						<div class="panel">
+							<div class="vipivka" id="product67">
+								<h2 class="bar-title">Chortok 1L</h2>
+								<p class="bar-price" id="price67">10.000</p>
+								<button class="bar-button button" onclick="addToCart(67)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product71">
+								<h2 class="bar-title">Suv 1.5L</h2>
+								<p class="bar-price" id="price71">5.000</p>
+								<button class="bar-button button" onclick="addToCart(71)">
+									Saqlash
+								</button>
+							</div>
+							<div class="vipivka" id="product72">
+								<h2 class="bar-title">Suv 0.5L</h2>
+								<p class="bar-price" id="price72">3.000</p>
+								<button class="bar-button button" onclick="addToCart(72)">
+									Saqlash
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cartModal" class="modal">
+			<div class="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<div id="cartItems"></div>
+			</div>
+		</div>
+
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<div class="footer-map">
+					<iframe
+						class="map"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.7758855266482!2d61.31333606978775!3d41.22061990267633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f60012805bcc465%3A0x81c6a37a8e99baa5!2z0KHRg9C70YLQsNC9INCa0LDRhNC1!5e1!3m2!1sru!2s!4v1706883563032!5m2!1sru!2s"
+						width="100%"
+						height="300"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+			<div class="container footer-content">
+				<div class="footer-list-content" id="#contacts">
+					<p style="color: #f79533" class="footer-title">
+						Bizning kontaktlarimiz
+					</p>
+					<ul class="footer-list">
+						<li class="list-content">
+							<img
+								class="footer-icon"
+								src="img/icon/free-icon-phone-call-5585856.png"
+								alt=""
+							/>
+							<a href="tel:+998997331673">Tel: +998(99)7331673</a>
+						</li>
+						<li class="list-content">
+							<img
+								class="footer-icon"
+								src="img/icon/free-icon-instagram-1384063.png"
+								alt="img"
+							/>
+							<a
+								href="https://www.instagram.com/sardor___2586?igsh=MWt2bjRpMmVxZGI1cQ=="
+								>Instagram
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script src="main/script.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: 'ease-in-out-sine',
+			})
+			setInterval(addItem, 100)
+		</script>
+	</body>
+</html>
